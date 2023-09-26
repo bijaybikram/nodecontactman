@@ -1,0 +1,152 @@
+/* Reset some default browser styles */
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* navbar styling */
+header {
+    height: 10vh;
+    position: relative;
+    display: flex;
+    background-color: #000080;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #f0f0f0;
+    margin: 10px;
+    text-decoration: none;
+}
+
+
+nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+nav a{
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 20px;
+}
+
+/* especially for single contact page */
+.single-contact{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #93b7f7;
+}
+
+.single-contact .contact-card {
+    position: relative;
+    width: 80%; /* 80% of the container's width */
+    height: 70%; /* 80% of the container's height */
+    background-color: #7b97b6; /* Box background color */
+    color: #fff; /* Text color */
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 10px; /* Rounded corners */
+}
+
+.btns-container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btns-container a{
+    text-decoration: none;
+    color: #e1f7f8;
+}
+
+
+/* Style the contact card container */
+.contact-card {
+    /* display: inline; */
+    width: 300px;
+    height: fit-content;
+    background-color: #becee7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the profile picture */
+.contact-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Style the contact's name */
+.contact-name {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Style the email and phone */
+.contact-email, .contact-phone {
+    font-size: 16px;
+    color: #19393b;
+    margin-bottom: 5px;
+}
+
+/* Style the 'About' section */
+.contact-about a {
+    font-size: 14px;
+    color: #19393b;
+    text-decoration: none;
+}
+
+/* Styles for the custom button */
+.custom-button {
+    bottom: 0px;
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+
+    /* Optional hover effect */
+    &:hover {
+        background-color: #93b7f7; /* Darker background color on hover */
+    }
+}
+
+/* All contacts page styling */
+
+.all-contacts{
+    width: 100%;
+    height: 90vh;
+    display:inline-flex;
+    /* position: relative; */
+    /* justify-content: center;
+    align-items: center; */
+    background-color: #93b7f7;
+}
+

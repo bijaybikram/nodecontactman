@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Card</title>
+    <link rel="stylesheet" href="/style/contact.css">
+    
+</head>
+<body>
+    <%- include('components/navbar') %>
+    <div class="all-contacts">
+        <% if(everyContacts.length == 0){ %>
+            <h1> Contacts is Empty </h1>
+      <% }else{ %>
+        <% everyContacts.length > 0 && everyContacts.forEach((contact) => { %>
+            <div class="contact-card">
+                <!-- <img src="profile.jpg" alt="Profile Picture" class="contact-avatar"> -->
+                <h2 class="contact-name"><%- contact.fullname %></h2>
+                <p class="contact-email"><%- contact.email %></p>
+                <p class="contact-phone"><%- contact.phone %></p>
+                <p class="contact-about"><a href="/single/<%- contact.id %>">About</a></p>
+            </div>
+        <% }) %>
+    <% } %>
+    
+    </div>
+</body>
+</html>

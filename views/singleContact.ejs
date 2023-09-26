@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Card</title>
+    <link rel="stylesheet" href="/style/contact.css">
+    
+</head>
+<body>
+    <%- include('components/navbar') %>
+    <div class="single-contact">
+    <div class="contact-card">
+        <!-- <img src="profile.jpg" alt="Profile Picture" class="contact-avatar"> -->
+        <h2 class="contact-name"><%- contact[0].fullname %></h2>
+        <p class="contact-email"><%- contact[0].email %></p>
+        <p class="contact-phone"><%- contact[0].phone %></p>
+        <p class="contact-about"><%- contact[0].about %></p>
+        <div class="btns-container">
+        <button class="custom-button"><a href="/edit/<%- contact[0].id %>">Edit</a></button>
+        <button class="custom-button"><a href="/delete/<%- contact[0].id %>">Delete</a></button>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
