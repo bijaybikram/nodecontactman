@@ -80,7 +80,7 @@ nav a{
 .contact-card {
     /* display: inline; */
     width: 300px;
-    height: fit-content;
+    height: 175px;
     background-color: #becee7;
     border: 1px solid #ccc;
     border-radius: 5px;
